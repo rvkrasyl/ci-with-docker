@@ -1,0 +1,7 @@
+sudo: required
+services:
+  - docker
+
+script: 
+  - docker build -t linkedin/node .
+  - docker images linkedin/node
